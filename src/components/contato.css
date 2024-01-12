@@ -1,0 +1,31 @@
+
+.form_contato{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.label_form_contato{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin: 100px !important; 
+}
+label{
+    margin-top: 20px;
+}
+
+.description_span_form{
+    font-weight: bold;
+    color: rgb(80, 79, 79);
+}
+
+.input_form_contat{
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
