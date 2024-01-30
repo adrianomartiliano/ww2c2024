@@ -1,0 +1,25 @@
+div .containerNavBar{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffab07;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #ffab07;
+    color: #215d94;
+    
+}
+
+.linkmenu{
+    color: #215d94;
+    font-style: none;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid gray;
+    font-size: 30px;
+}

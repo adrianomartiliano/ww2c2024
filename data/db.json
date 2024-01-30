@@ -1,0 +1,47 @@
+{
+  "userx1prata": [
+    {
+      "id": 3884242,
+      "nick": "G O K U",
+      "clan": "CAN"
+    },
+    {
+      "id": 38844242,
+      "nick": "TESTE 1",
+      "clan": "CAN1"
+    },
+    {
+      "id": 454545,
+      "nick": "TESTE 2",
+      "clan": "CAN2"
+    },
+    {
+      "id": "acf8",
+      "nome": "Teste",
+      "clan": "VKN",
+      "recado": "Teststeataesa"
+    },
+    {
+      "id": "0f7f",
+      "nome": "Teste",
+      "clan": "VKN",
+      "recado": "Teststeataesa"
+    },
+    {
+      "id": "f4e2",
+      "nome": "Adriano",
+      "clan": "VKN",
+      "recado": "ASDFSADFSADF"
+    }
+  ],
+  "sugestao": [
+    {
+        "id": 323,
+        "nome": "Adriano",
+        "clan": "CAN",
+        "recado": "Qualquer coisa que eu possa falar. "
+    }
+    
+
+]
+}

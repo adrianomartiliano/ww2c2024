@@ -18,28 +18,31 @@ const Contato = () => {
     const handleClan = (e) => {
         setClan(e.target.value);
     }
+    const urlsugestao = "https://www.ww2cup.app.br/data/sugestao.json";
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        
-        const formaData = new FormData();
-        formaData.append('nome', nome);
-        formaData.append('clan', clan);
-        formaData.append('recado', recado);
 
-        fetch('../backend/processaenvio.php', {
-            method: 'POST',
-            body: formaData
+        const objetoRecado = {
+            nome, 
+            clan,
+            recado
+        }
+
+        const response = await fetch(urlsugestao, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(objetoRecado)
+            
         })
-        .then((response) => {
-            if(!response.ok){
-                throw new Error('Erro ao enviar os dados');
-            }
-            console.log('Dados enviados com sucesso');
-        })
-        .catch((error) => {
-            console.error('Erro:', error.message);
-    });
+
+        if(!response.ok){
+            console.log('Erro ao enviar dados')
+        } else{
+            alert("Sugestão enviada com sucesso! Obrigado!")
+        }
 }
 
     return (

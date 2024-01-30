@@ -1,13 +1,11 @@
-div { 
+div  .conteudo{ 
     background-image: url("../assets/contato_sugestao.jpg");
     background-position: center;
     background-size: cover;
-}
-
-.conteudo{
     display: flex;
     justify-content: center;
 }
+
 
 .form_contato{
     display: flex;
@@ -17,7 +15,7 @@ div {
     width: 400px;
     padding: 10px 10px 20px 10px;
     background-color: #ffac07f1;
-    box-shadow: 0px 3px 10px rgba(255, 247, 247, 0.39);
+    box-shadow: 0px 3px 10px rgba(255, 226, 226, 0.39);
 }
 
 .title_form{
