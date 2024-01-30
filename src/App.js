@@ -12,6 +12,8 @@ import Home from './pages/Home';
 //COMPONENTS
 import Navbar from './components/Navbar'
 
+// import firebase from './firebase';
+
 function App() {
 
   const [userx1prata, setUserx1prata] = useState([]);
