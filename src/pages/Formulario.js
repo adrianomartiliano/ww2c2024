@@ -15,7 +15,7 @@ const Formulario = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost/backend/adicionar_dados.php', {
+            const response = await fetch('https://www.ww2cup.app.br/backend/armazena_recado.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -35,36 +35,43 @@ const Formulario = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                ID:
+        <div className='conteudo'>
+        <form onSubmit={handleSubmit} className='form_contato'>
+            <label className='label_form_contat'>
+            <span className="description_span_form">ID</span>
                 <input
                     type="text"
                     name="id"
+                    className="input_form_contat" 
                     value={dadosFormulario.id}
                     onChange={handleChange}
                 />
             </label>
-            <label>
-                Nickname:
+            <label className="label_form_contat">
+            <span className="description_span_form">Nickname</span>
                 <input
                     type="text"
                     name="nickname"
+                    className="input_form_contat" 
                     value={dadosFormulario.nickname}
                     onChange={handleChange}
                 />
             </label>
-            <label>
-                Clan:
+            <label className="label_form_contat">
+                <span className="description_span_form">Clan</span>
                 <input
                     type="text"
+                    className="input_form_contat" 
                     name="clan"
                     value={dadosFormulario.clan}
                     onChange={handleChange}
                 />
             </label>
-            <button type="submit">Enviar</button>
+            <label className="label_form_contat">
+                    <button className="btn_form_submit" type="submit">Cadastrar</button>
+                </label>
         </form>
+        </div>
     );
 }
 

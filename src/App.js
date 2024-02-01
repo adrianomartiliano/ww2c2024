@@ -13,12 +13,10 @@ import Formulario from './pages/Formulario';
 //COMPONENTS
 import Navbar from './components/Navbar'
 
-// import firebase from './firebase';
-
 function App() {
 
   const [userx1prata, setUserx1prata] = useState([]);
-  const urluserx1prata = "http://localhost/backend/conexao.php";
+  const urluserx1prata = "https://www.ww2cup.app.br/data/db.json";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,14 +24,13 @@ function App() {
       try {
         
         const response = await fetch(urluserx1prata);
-        console.log("Aqui passou")
         if (!response.ok) {
           throw new Error('Erro ao fazer a requisição: ' + response.statusText);
         }
         
         const data = await response.json();
         setUserx1prata(data);
-        console.log(data);
+
       } catch (error) {
         console.error('Erro ao recuperar os dados:', error);
       }

@@ -1,80 +1,76 @@
-import React, { useState } from "react";
-import "./contato.css";
+import React, { useState } from 'react';
+import "./contato.css"
 
-const Contato = () => {
+const Formulario = () => {
+    const [dadosFormulario, setDadosFormulario] = useState({
+        nome: '',
+        recado: '',
+        teste: ''
+    });
 
-    const clans = ["CAN", "CÃES", "LBR", "VKN", "WIN", "HDL", "VZLA", "1973"]
+    const [envioConfirmado, setEnvioConfirmado] = useState(false);
 
-    const [nome, setNome] = useState("");
-    const [clan, setClan] = useState("");
-    const [recado, setRecado] = useState("");
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setDadosFormulario({ ...dadosFormulario, [name]: value });
+    };
 
-    const handleNome = (e) => {
-        setNome(e.target.value);
-    }
-    const handleRecado = (e) => {
-        setRecado(e.target.value);
-    }
-    const handleClan = (e) => {
-        setClan(e.target.value);
-    }
-    const urlsugestao = "https://www.ww2cup.app.br/data/sugestao.json";
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        const objetoRecado = {
-            nome, 
-            clan,
-            recado
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch('https://www.ww2cup.app.br/backend/armazena_recado.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dadosFormulario)
+            });
+            if (response.ok) {
+                setEnvioConfirmado(true);
+                setDadosFormulario({
+                    nome: '',
+                    recado: ''
+                });
+            } else {
+                console.error('Erro ao adicionar dados.');
+            }
+        } catch (error) {
+            console.error('Erro ao adicionar dados:', error);
         }
-
-        const response = await fetch(urlsugestao, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(objetoRecado)
-            
-        })
-
-        if(!response.ok){
-            console.log('Erro ao enviar dados')
-        } else{
-            alert("Sugestão enviada com sucesso! Obrigado!")
-        }
-}
+    };
 
     return (
-        <div className="conteudo">
-            <form onSubmit={handleSubmit} className="form_contato">
-                <label className="label_form_contat">
-                    <h2 className="title_form">Envie sua sugestão</h2>
-                </label>
-                <label htmlFor="nome" className="label_form_contat">
+        <div className='conteudo'>
+            <form onSubmit={handleSubmit} className='form_contato'>
+
+                <h2 className='title_form'>Envie seu recado</h2>
+                <span >{envioConfirmado && <p className='confirm_envio'>Obrigado por enviar o recado{dadosFormulario.nome}</p>}</span>
+                <label className='label_form_contat'>
                     <span className="description_span_form">Nome</span>
-                    <input name="nome" className="input_form_contat" onChange={handleNome}/>
+                    <input
+                        type="text"
+                        name="nome"
+                        className="input_form_contat" 
+                        value={dadosFormulario.nome}
+                        onChange={handleChange}
+                    />
                 </label>
                 <label className="label_form_contat">
-                    <span className="description_span_form">Clan</span>
-                    <select className="input_form_contat" onChange={handleClan}>
-                        <option></option>
-                        {clans.map((item, index) => (
-                            <option key={index}>{item}</option>
-                        ))}
-                    </select>
+                    <span className="description_span_form">Recado</span>
+                    <textarea
+                        name="recado"
+                        className="input_form_contat" 
+                        value={dadosFormulario.recado}
+                        onChange={handleChange}>
+                    </textarea>
                 </label>
                 
-                <label htmlFor="recado" className="label_form_contat">
-                    <span className="description_span_form">Recado</span>
-                    <textarea name="recado" className="input_form_contat" onChange={handleRecado}></textarea>
-                </label>
                 <label className="label_form_contat">
-                    <button className="btn_form_submit">Enviar</button>
+                    <button className="btn_form_submit" type="submit">Cadastrar</button>
                 </label>
             </form>
         </div>
-    )
+    );
 }
 
-export default Contato;
+export default Formulario;
