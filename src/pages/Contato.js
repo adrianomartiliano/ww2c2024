@@ -4,9 +4,11 @@ import "./contato.css"
 const Formulario = () => {
     const [dadosFormulario, setDadosFormulario] = useState({
         nome: '',
-        recado: '',
-        teste: ''
+        recado: ''
     });
+
+    const urllocal = "http://localhost/backend/armazena_recado.php";
+    const urlexterna = "https://www.ww2cup.app.br/backend/armazena_recado.php";
 
     const [envioConfirmado, setEnvioConfirmado] = useState(false);
 
@@ -18,7 +20,7 @@ const Formulario = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('https://www.ww2cup.app.br/backend/armazena_recado.php', {
+            const response = await fetch(urllocal, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -15,28 +15,28 @@ import Navbar from './components/Navbar'
 
 function App() {
 
-  const [userx1prata, setUserx1prata] = useState([]);
-  const urluserx1prata = "https://www.ww2cup.app.br/data/db.json";
+  // const [userx1prata, setUserx1prata] = useState([]);
+  // const urluserx1prata = "https://www.ww2cup.app.br/data/db.json";
 
-  useEffect(() => {
-    const fetchData = async () => {
+  // useEffect(() => {
+  //   const fetchData = async () => {
       
-      try {
+  //     try {
         
-        const response = await fetch(urluserx1prata);
-        if (!response.ok) {
-          throw new Error('Erro ao fazer a requisição: ' + response.statusText);
-        }
+  //       const response = await fetch(urluserx1prata);
+  //       if (!response.ok) {
+  //         throw new Error('Erro ao fazer a requisição: ' + response.statusText);
+  //       }
         
-        const data = await response.json();
-        setUserx1prata(data);
+  //       const data = await response.json();
+  //       setUserx1prata(data);
 
-      } catch (error) {
-        console.error('Erro ao recuperar os dados:', error);
-      }
-    };
-    fetchData();
-  }, []);
+  //     } catch (error) {
+  //       console.error('Erro ao recuperar os dados:', error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
   
 
   return (
