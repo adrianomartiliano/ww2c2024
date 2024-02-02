@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contato from './pages/Contato';
 import Home from './pages/Home';
 import Formulario from './pages/Formulario';
+import Mural from './pages/Mural';
 
 //COMPONENTS
 import Navbar from './components/Navbar'
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/formulario' element={<Formulario/>} />
+          <Route path='/mural' element={<Mural/>} />
           <Route path='/contato' element={<Contato/>} />
         </Routes>
       </BrowserRouter>
