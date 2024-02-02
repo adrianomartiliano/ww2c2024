@@ -12,7 +12,7 @@ nav{
     height: 100px;
     background-color: #ffab07;
     color: #215d94;
-    
+    font-family: 'Frijole';
 }
 
 .linkmenu{
@@ -21,4 +21,9 @@ nav{
     padding: 10px;
     text-decoration: none;
     font-size: 30px;
+}
+
+.logoNavbar img{
+    width: 90px;
+    height: 90px;
 }

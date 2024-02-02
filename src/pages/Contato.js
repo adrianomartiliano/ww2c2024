@@ -45,8 +45,8 @@ const Formulario = () => {
         <div className='conteudo'>
             <form onSubmit={handleSubmit} className='form_contato'>
 
-                <h2 className='title_form'>Envie seu recado</h2>
-                <span >{envioConfirmado && <p className='confirm_envio'>Obrigado por enviar o recado{dadosFormulario.nome}</p>}</span>
+                <h2 className='title_form'>Escreva sua mensagem</h2>
+                {envioConfirmado && <p ><span className='confirm_envio'>Recado gravado! Obrigado.</span>{dadosFormulario.nome}</p>}
                 <label className='label_form_contat'>
                     <span className="description_span_form">Nome</span>
                     <input
@@ -63,6 +63,7 @@ const Formulario = () => {
                         name="recado"
                         className="input_form_contat" 
                         value={dadosFormulario.recado}
+                        rows={5}
                         onChange={handleChange}>
                     </textarea>
                 </label>
