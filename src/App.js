@@ -15,31 +15,7 @@ import Mural from './pages/Mural';
 import Navbar from './components/Navbar'
 
 function App() {
-
-  // const [userx1prata, setUserx1prata] = useState([]);
-  // const urluserx1prata = "https://www.ww2cup.app.br/data/db.json";
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-      
-  //     try {
-        
-  //       const response = await fetch(urluserx1prata);
-  //       if (!response.ok) {
-  //         throw new Error('Erro ao fazer a requisição: ' + response.statusText);
-  //       }
-        
-  //       const data = await response.json();
-  //       setUserx1prata(data);
-
-  //     } catch (error) {
-  //       console.error('Erro ao recuperar os dados:', error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
   
-
   return (
     <div className="App">
       <BrowserRouter>

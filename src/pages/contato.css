@@ -68,6 +68,10 @@ p {
     border-radius: 15px;
 }
 
+.caracteresRestantes {
+    color: #215D94;
+}
+
 @media (max-width: 768px) {
     .form_contato {
         margin: 270px 20px;

@@ -10,17 +10,37 @@ const Formulario = () => {
     const urllocal = "http://localhost/backend/armazena_recado.php";
     const urlexterna = "https://www.ww2cup.app.br/backend/armazena_recado.php";
 
+    const [caracteresRestantes, setCaracteresRestantes] = useState(300);
+
     const [envioConfirmado, setEnvioConfirmado] = useState(false);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
-        setDadosFormulario({ ...dadosFormulario, [name]: value });
+        
+        if (name === 'recado') {
+            // Limita o número de caracteres apenas para o campo de "recado"
+            if (value.length <= 300) {
+                setDadosFormulario({ ...dadosFormulario, [name]: value });
+                setCaracteresRestantes(300 - value.length);
+            }
+        } else {
+            // Se não for do campo "recado", atualize o estado normalmente
+            setDadosFormulario({ ...dadosFormulario, [name]: value });
+        }
+    };
+
+    const handleKeyPress = (event) => {
+        // Verifica se a tecla pressionada é "Enter"
+        if (event.key === 'Enter') {
+            // Evita o comportamento padrão (envio do formulário e quebra de linha)
+            event.preventDefault();
+        }
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch(urllocal, {
+            const response = await fetch(urlexterna, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -63,10 +83,13 @@ const Formulario = () => {
                         name="recado"
                         className="input_form_contat" 
                         value={dadosFormulario.recado}
-                        rows={5}
-                        onChange={handleChange}>
+                        rows={7}
+                        onChange={handleChange}
+                        onKeyPress={handleKeyPress}>
                     </textarea>
+                    
                 </label>
+                <span className='caracteresRestantes'>{caracteresRestantes}</span>
                 
                 <label className="label_form_contat">
                     <button className="btn_form_submit" type="submit">Cadastrar</button>
