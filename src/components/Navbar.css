@@ -27,3 +27,49 @@ nav{
     width: 90px;
     height: 90px;
 }
+
+@media screen and (max-width: 700px) {
+    .navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 93px;
+        left: 0px;
+        background-color: #ffab07;
+        width: 100%;
+    }
+
+    .navMenu.aberto{
+        display: flex;
+        height: 100%;
+    }
+
+    .linkmenu {
+        margin: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: #215d94;
+        margin: 5px;
+        transition: transform 0.4s;
+    }
+
+    .line.aberto:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .line.aberto:nth-child(2) {
+        opacity: 0;
+    }
+
+    .line.aberto:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
