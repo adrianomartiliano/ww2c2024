@@ -16,14 +16,14 @@ const Navbar = () => {
     return(
         <div className="containerNavBar">
             <div className="logoNavbar">
-                <Link to="/" onClick={toggleMenu}><img src="../wwc2.png"></img></Link>
+                <Link to="/" onClick={menuAberto ? toggleMenu : undefined }><img src="../wwc2.png"></img></Link>
                 
             </div>
             <div>
 
             <nav className={`navMenu${menuAberto ? ' aberto' : ''}`}>
-                <Link to="/mural" className="linkmenu" onClick={toggleMenu}>Torneios</Link>
-                <Link to="/" className="linkmenu" onClick={toggleMenu}>Mural</Link>
+                <Link to="/" className="linkmenu" onClick={toggleMenu}>Torneios</Link>
+                <Link to="/mural" className="linkmenu" onClick={toggleMenu}>Mural</Link>
             </nav>
             <div className="hamburger" onClick={toggleMenu}>
                 <div className={`line ${menuAberto ? 'aberto' : ''}`}></div>
