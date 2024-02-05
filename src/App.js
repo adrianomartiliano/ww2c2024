@@ -10,9 +10,11 @@ import Contato from './pages/Contato';
 import Home from './pages/Home';
 import Formulario from './pages/Formulario';
 import Mural from './pages/Mural';
+import Torneios from './pages/Torneios';
 
 //COMPONENTS
 import Navbar from './components/Navbar'
+
 
 function App() {
   
@@ -25,6 +27,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/formulario' element={<Formulario/>} />
+          <Route path='/torneios' element={<Torneios/>} />
           <Route path='/mural' element={<Mural/>} />
           <Route path='/contato' element={<Contato/>} />
         </Routes>

@@ -1,0 +1,26 @@
+.conteudoX1Prata {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    width: 400px;
+    max-width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.conteudoX1Prata h3{
+    text-align: center;
+}
+
+.iconTorneios{
+    width: 50px;
+}
+
+.linhaMenux1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+

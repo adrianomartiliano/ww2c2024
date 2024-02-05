@@ -22,7 +22,7 @@ const Navbar = () => {
             <div>
 
             <nav className={`navMenu${menuAberto ? ' aberto' : ''}`}>
-                <Link to="/" className="linkmenu" onClick={toggleMenu}>Torneios</Link>
+                <Link to="/torneios" className="linkmenu" onClick={toggleMenu}>Torneios</Link>
                 <Link to="/mural" className="linkmenu" onClick={toggleMenu}>Mural</Link>
             </nav>
             <div className="hamburger" onClick={toggleMenu}>
