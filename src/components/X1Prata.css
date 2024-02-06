@@ -1,16 +1,25 @@
 .conteudoX1Prata {
-    border: 1px solid gray;
+    background-color: #ffac07c0;
     border-radius: 20px;
     padding: 20px;
     margin: 30px;
-    width: 400px;
+    width: 320px;
     max-width: 500px;
+    height: 360px;
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
+    color: #215D94;
+    box-shadow: 1px 1px 20px 5px rgb(58, 58, 58);
 }
 
 .conteudoX1Prata h3{
     text-align: center;
+    font-family: 'Black Ops One', system-ui;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 20px;
+    
 }
 
 .iconTorneios{
@@ -20,7 +29,11 @@
 .linhaMenux1{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
     align-items: center;
+    font-family: 'Rubik Vinyl', system-ui;
+    font-weight: 100;
+    font-size: 20px;
+    
 }
 

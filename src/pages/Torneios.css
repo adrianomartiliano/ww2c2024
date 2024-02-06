@@ -1,0 +1,8 @@
+.conteudoTorneios{
+
+    background-image: url("../assets/fundo_torneios.jpg");
+    background-size: cover;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}

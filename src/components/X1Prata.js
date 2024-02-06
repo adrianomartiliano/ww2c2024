@@ -5,12 +5,12 @@ import React from "react";
 const X1Prata = () => {
     return(
         <div className="conteudoX1Prata">
-            <h3>X1 - Nível Prata</h3>
+            <h3>X1 - NÍVEL PRATA</h3>
             <div className="conteudoMenuX1prata">
-                <div className="linhaMenux1"><h4>Inscreva-se</h4><img className="iconTorneios" src="./inscricao.png" alt="Icone Inscrição"></img></div>
-                <div className="linhaMenux1"><h4>Inscritos</h4><img className="iconTorneios" src="./confirmados_.png" alt="Icone Inscrição"></img></div>
-                <div className="linhaMenux1"><h4>Regras</h4><img className="iconTorneios" src="./regras.png" alt="Icone Inscrição"></img></div>
-                <div className="linhaMenux1"><h4>Armas Permitidas</h4><img className="iconTorneios" src="./armas.png" alt="Icone Inscrição"></img></div>
+                <div className="linhaMenux1"><h4>PARTICIPAR</h4><img className="iconTorneios" src="./inscricao.png" alt="Icone Inscrição"></img></div>
+                <div className="linhaMenux1"><h4>CONFIRMADOS</h4><img className="iconTorneios" src="./confirmados_.png" alt="Icone Inscrição"></img></div>
+                <div className="linhaMenux1"><h4>REGRAS GERAIS</h4><img className="iconTorneios" src="./regras.png" alt="Icone Inscrição"></img></div>
+                <div className="linhaMenux1"><h4>ARMAS PERMITIDAS</h4><img className="iconTorneios" src="./armas.png" alt="Icone Inscrição"></img></div>
 
             </div>
 

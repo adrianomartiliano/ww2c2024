@@ -2,8 +2,8 @@ import "./Home.css"
 
 const Home = () => {
     return(
-        <div>
-            <h1>HOME</h1>
+        <div className="conteudoHome">
+            <h1>Em construção!</h1>
         </div>
     )
 }

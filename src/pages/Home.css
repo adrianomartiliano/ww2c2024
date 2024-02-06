@@ -1,0 +1,16 @@
+.conteudoHome{
+    background-image: url("../assets/fundo_home.jpg");
+    background-size: cover;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudoHome h1{
+    color: #ffac07f1;
+    background-color: rgba(67, 101, 143, 0.834);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 5px rgb(0, 0, 0);
+}

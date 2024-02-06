@@ -10,7 +10,7 @@ import X1Prata from "../components/X1Prata";
 const Torneios = () => {
 
     return (
-        <div>
+        <div className="conteudoTorneios">
             <X1Prata/>
 
         </div>
