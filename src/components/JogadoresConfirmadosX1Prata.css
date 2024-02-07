@@ -1,0 +1,18 @@
+.conteudoJogadoresConfirmadosX1Prata{
+    display: flex;
+    justify-content: center;
+}
+
+.linhaTituloJogador h3{
+    margin: 20px;
+}
+
+.linhaJogadorConfirmado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconWhats{
+    width: 100px;
+
+}
