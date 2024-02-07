@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
+
 import "./FormularioX1Prata.css"
 
 const FormularioX1Prata = () => {
@@ -14,31 +18,23 @@ const FormularioX1Prata = () => {
 
     const [envioConfirmado, setEnvioConfirmado] = useState(false);
 
+    const lidarContato = (value) => {
+        setDadosFormularioX1Prata({ ...dadosFormularioX1Prata, contato: value });
+    };
     const handleChange = (event) => {
-        const { name, value } = event.target;
-        
-        if (name === 'recado') {
-            // Limita o número de caracteres apenas para o campo de "recado"
-            if (value.length <= 300) {
-                setDadosFormularioX1Prata({ ...dadosFormularioX1Prata, [name]: value });
-                setCaracteresRestantes(300 - value.length);
-            }
-        } else {
-            // Se não for do campo "recado", atualize o estado normalmente
-            setDadosFormulario({ ...dadosFormulario, [name]: value });
-        }
-    };
+        const {name, value } = event.target;
+        let newValue = value
 
-    const handleKeyPress = (event) => {
-        // Verifica se a tecla pressionada é "Enter"
-        if (event.key === 'Enter') {
-            // Evita o comportamento padrão (envio do formulário e quebra de linha)
-            event.preventDefault();
+        if(name === 'id'){
+            newValue = newValue.replace(/\D/g, '');
         }
+        setDadosFormularioX1Prata({ ...dadosFormularioX1Prata, [name]: newValue });
     };
+    
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        
         try {
             const response = await fetch(urlexterna, {
                 method: 'POST',
@@ -61,22 +57,26 @@ const FormularioX1Prata = () => {
         } catch (error) {
             console.error('Erro ao adicionar dados:', error);
         }
+        
     };
 
+    const clans = ["1973", "BOSS", "CAN", "CÂES", "FURA", "GTLA", "HARD", "HDL", "LBR", "MOW", "OTTO", "PRO", "SOLO", "TEAM", "TRIB", "TS", "UZ", "VKN", "VZLA", "WIN", "WORG", "WU"];
+
     return (
-        <div className='conteudo'>
+        <div className='conteudoInscricaoX1Prata'>
             <form onSubmit={handleSubmit} className='form_contato'>
 
                 <h2 className='title_form'>INSCRIÇÃO</h2>
-                {envioConfirmado && <p ><span className='confirm_envio'>Inscrição confirmada! Obrigado.</span>{dadosFormulario.nome}</p>}
+                {envioConfirmado && <p ><span className='confirm_envio'>Inscrição confirmada! Obrigado.</span></p>}
                 <label className='label_form_contat'>
                     <span className="description_span_form">ID</span>
                     <input
                         type="text"
-                        name="nome"
+                        name="id"
                         className="input_form_contat" 
-                        value={dadosFormulario.id}
+                        value={dadosFormularioX1Prata.id}
                         onChange={handleChange}
+                        required
                     />
                 </label>
                 <label className='label_form_contat'>
@@ -85,35 +85,43 @@ const FormularioX1Prata = () => {
                         type="text"
                         name="nickname"
                         className="input_form_contat" 
-                        value={dadosFormulario.nickname}
+                        value={dadosFormularioX1Prata.nickname}
                         onChange={handleChange}
+                        required
                     />
                 </label>
                 <label className='label_form_contat'>
-                    <span className="description_span_form">CLAN</span>
-                    <input
-                        type="text"
+                    <span className="description_span_form">CLÃ</span>
+                    <select
                         name="clan"
                         className="input_form_contat" 
-                        value={dadosFormulario.clan}
+                        value={dadosFormularioX1Prata.clan}
                         onChange={handleChange}
-                    />
+                        required
+                    >
+                        <option value="">Selecione o Clã</option>
+                        {clans.map((clan, index) => (
+                            <option key={index} value={clan}>{clan}</option>
+                        ))}
+                    </select>
                 </label>
                 <label className='label_form_contat'>
-                    <span className="description_span_form">ID</span>
-                    <input
-                        type="text"
-                        name="nome"
-                        className="input_form_contat" 
-                        value={dadosFormulario.contato}
-                        onChange={handleChange}
+                    <span className="description_span_form">WHATSAPP</span>
+                    <PhoneInput
+                        name="contato"
+                        value={dadosFormularioX1Prata.contato}
+                        onChange={lidarContato}
+                        className='input_form_contat'
+                        required
                     />
                 </label>
+                
                 
                 <label className="label_form_contat">
                     <button className="btn_form_submit" type="submit">Cadastrar</button>
                 </label>
             </form>
+            
         </div>
     );
 }

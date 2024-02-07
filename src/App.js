@@ -11,9 +11,11 @@ import Home from './pages/Home';
 import Formulario from './pages/Formulario';
 import Mural from './pages/Mural';
 import Torneios from './pages/Torneios';
+import FormularioX1Prata from './components/FormularioX1Prata';
 
 //COMPONENTS
 import Navbar from './components/Navbar'
+
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
           <Route path='/torneios' element={<Torneios/>} />
           <Route path='/mural' element={<Mural/>} />
           <Route path='/contato' element={<Contato/>} />
+          <Route path='/torneios/inscricao-x1' element={<FormularioX1Prata/>} />
         </Routes>
       </BrowserRouter>
     </div>

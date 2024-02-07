@@ -1,0 +1,19 @@
+.conteudoInscricaoX1Prata{
+    background-image: url("../assets/contato_sugestao.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px); /* Definindo a altura como 100% da altura da viewport */
+}
+
+.PhoneInputInput{
+    background-color: #d4910b;
+    color: #215D94;
+}
+.PhoneInputInput:focus{
+    color: white;
+    outline: none;
+}
