@@ -10,7 +10,6 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setMenuAberto(!menuAberto);
-        console.log(menuAberto)
     };
 
     return(

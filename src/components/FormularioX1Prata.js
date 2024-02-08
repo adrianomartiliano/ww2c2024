@@ -67,7 +67,7 @@ const FormularioX1Prata = () => {
             <form onSubmit={handleSubmit} className='form_contato'>
 
                 <h2 className='title_form'>INSCRIÇÃO</h2>
-                {envioConfirmado && <p ><span className='confirm_envio'>Inscrição confirmada! Obrigado.</span></p>}
+                {envioConfirmado && <p ><span className='confirm_envio'>Confirmado.</span></p>}
                 <label className='label_form_contat'>
                     <span className="description_span_form">ID</span>
                     <input

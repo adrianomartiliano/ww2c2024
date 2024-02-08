@@ -1,18 +1,48 @@
 .conteudoJogadoresConfirmadosX1Prata{
+    background-image: url("../assets/fundo_jogadores_confirmados.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.linhaTituloJogador{
     display: flex;
     justify-content: center;
 }
-
 .linhaTituloJogador h3{
+    padding-bottom: 10px;
+    width: 200px;
     margin: 20px;
+    text-align: center;
+    border-bottom: 3px solid red;
 }
 
 .linhaJogadorConfirmado{
-    display: flex;
-    justify-content: space-between;
+    color: #215D94;
+    width: 300px;
+    margin: 5px;
 }
 
-.iconWhats{
-    width: 100px;
+.linhaJogadorConfirmado li{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffac07d5;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+
+.iconWhats{
+    width: 35px;
+
+}
+
+.Teste{
+    height: 80px;
 }
