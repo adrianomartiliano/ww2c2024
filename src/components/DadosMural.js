@@ -5,7 +5,7 @@ import "./DadosMural.css";
 const DadosMural = () => {
 
     const [dados_mural, setDados_mural] = useState([]);
-    const urllocal = "http://localhost/backend/dados_mural.php";
+    //const urllocal = "http://localhost/backend/dados_mural.php";
     const urlexterna = "https://www.ww2cup.app.br/backend/dados_mural.php";
 
     useEffect(() => {

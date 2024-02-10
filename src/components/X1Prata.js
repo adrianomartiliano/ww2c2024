@@ -8,10 +8,10 @@ const X1Prata = () => {
         <div className="conteudoX1Prata">
             <h3>X1 - NÍVEL PRATA</h3>
             <div className="conteudoMenuX1prata">
-                <div className="linhaMenux1"><h4>PARTICIPAR</h4><Link to="inscricao-x1"><img className="iconTorneios" src="./inscricao.png" alt="Icone Inscrição"></img></Link></div>
-                <div className="linhaMenux1"><h4>CONFIRMADOS</h4><Link to="jogadores-confirmados"><img className="iconTorneios" src="./confirmados_.png" alt="Icone Inscrição"></img></Link></div>
-                <div className="linhaMenux1"><h4>REGRAS GERAIS</h4><img className="iconTorneios" src="./regras.png" alt="Icone Inscrição"></img></div>
-                <div className="linhaMenux1"><h4>ARMAS PERMITIDAS</h4><img className="iconTorneios" src="./armas.png" alt="Icone Inscrição"></img></div>
+                <div className="linhaMenux1"><Link to="inscricao-x1"><img className="iconTorneios" src="./inscricao.png" alt="Icone Inscrição"></img></Link><h4>PARTICIPAR</h4></div>
+                <div className="linhaMenux1"><Link to="jogadores-confirmados"><img className="iconTorneios" src="./confirmados_.png" alt="Icone Inscrição"></img></Link><h4>CONFIRMADOS</h4></div>
+                <div className="linhaMenux1"><img className="iconTorneios" src="./regras.png" alt="Icone Inscrição"></img><h4>REGRAS GERAIS</h4></div>
+                <div className="linhaMenux1"><img className="iconTorneios" src="./armas.png" alt="Icone Inscrição"></img><h4>ARMAS PERMITIDAS</h4></div>
 
             </div>
 

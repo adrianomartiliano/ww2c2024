@@ -13,7 +13,7 @@ const FormularioX1Prata = () => {
         contato: ''
     });
 
-    const urllocal = "http://localhost/backend/armazena_recado.php";
+    //const urllocal = "http://localhost/backend/armazena_recado.php";
     const urlexterna = "https://www.ww2cup.app.br/backend/armazena_User_x1Prata.php";
 
     const [envioConfirmado, setEnvioConfirmado] = useState(false);

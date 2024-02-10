@@ -7,7 +7,14 @@ import IconWhats from "../assets/icons/icon-whatsapp.png";
 const JogadoresConfirmadosX1Prata = () => {
 
     const [jogadores, setJogadores] = useState([]);
+    const [modalAberto, setModalAberto] = useState(false);
+    const [jogadorSelecionado, setJogadorSelecionado] = useState(null);
     const urlexterna = "https://www.ww2cup.app.br/backend/Jogadores_confirmados_x1_prata.php"
+
+    const toggleModal = (jogador) => {
+      setModalAberto(!modalAberto);
+      setJogadorSelecionado(jogador);
+  };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,15 +36,7 @@ const JogadoresConfirmadosX1Prata = () => {
         fetchData();
       }, []);
 
-    const [linhaJogador, setLinhaJogador] = useState([]);
 
-    const toggleJogador = (index) => {
-        setLinhaJogador(prevState => {
-            const newState = [...prevState];
-            newState[index] = !newState[index];
-            return newState;
-        });
-    };
         
 
     return(
@@ -49,15 +48,25 @@ const JogadoresConfirmadosX1Prata = () => {
                 <div className="linhaJogadorConfirmado">
                     {jogadores.map((jogador, i) => (
                         <li 
-                            onClick={()=> toggleJogador(i)}
-                            className={`${linhaJogador[i] ? 'Teste' : ''}`}
-                            key={i}>{jogador.nickname}
-                            <a href={`https://wa.me/${jogador.contato}`} 
+                            
+                            key={i}>
+                              <span onClick={() => toggleModal(jogador)}>{jogador.nickname}
+                            </span><a href={`https://wa.me/${jogador.contato}`} 
                             target="_blanl">
                             <img className="iconWhats" 
                                 src={IconWhats} 
                                 alt="Icone Inscrição"></img></a></li>
                     ))}
+                    {modalAberto && jogadorSelecionado && (
+                      <div className="modal">
+                        <div className="modal-conteudo">
+                            <h2>{jogadorSelecionado.nickname}</h2>
+                            <p>ID: {jogadorSelecionado.id}</p>
+                            <p>Clan: {jogadorSelecionado.clan}</p>
+                            <button onClick={() => setModalAberto(false)}>X</button>
+                        </div>
+                      </div>
+                    )}
                 </div>
             </div>
         </div>

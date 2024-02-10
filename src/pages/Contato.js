@@ -7,7 +7,7 @@ const Formulario = () => {
         recado: ''
     });
 
-    const urllocal = "http://localhost/backend/armazena_recado.php";
+    //const urllocal = "http://localhost/backend/armazena_recado.php";
     const urlexterna = "https://www.ww2cup.app.br/backend/armazena_recado.php";
 
     const [caracteresRestantes, setCaracteresRestantes] = useState(300);
