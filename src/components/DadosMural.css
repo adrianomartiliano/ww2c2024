@@ -1,3 +1,8 @@
+.conteudoDadosMural{
+    text-align: center;
+
+}
+
 .viewRecado{
     display: inline-block;
     flex-direction: column;

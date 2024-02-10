@@ -30,7 +30,7 @@ const DadosMural = () => {
 
 
     return (
-        <div>
+        <div className="conteudoDadosMural">
             {dados_mural.map((item, i) => (
                 <div key={i} className="viewRecado">
                     <h3>{item.nome}</h3>

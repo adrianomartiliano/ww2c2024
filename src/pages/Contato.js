@@ -92,7 +92,9 @@ const Formulario = () => {
                 <span className='caracteresRestantes'>{caracteresRestantes}</span>
                 
                 <label className="label_form_contat">
-                    <button className="btn_form_submit" type="submit">Cadastrar</button>
+                    <button className="btn_form_submit" type="submit" disabled={envioConfirmado}>
+                        {envioConfirmado ? 'Enviado!' : 'Cadastrar'}
+                    </button>
                 </label>
             </form>
         </div>

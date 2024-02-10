@@ -118,7 +118,9 @@ const FormularioX1Prata = () => {
                 
                 
                 <label className="label_form_contat">
-                    <button className="btn_form_submit" type="submit">Cadastrar</button>
+                    <button className="btn_form_submit" type="submit" disabled={envioConfirmado}>
+                        {envioConfirmado ? 'Enviando...' : 'Cadastrar'}
+                    </button>
                 </label>
             </form>
             
