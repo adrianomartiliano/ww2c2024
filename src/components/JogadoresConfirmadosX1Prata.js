@@ -9,6 +9,7 @@ const JogadoresConfirmadosX1Prata = () => {
     const [jogadores, setJogadores] = useState([]);
     const [modalAberto, setModalAberto] = useState(false);
     const [jogadorSelecionado, setJogadorSelecionado] = useState(null);
+    const [vagasRestantes, setVagasRestantes] = useState(32); // Inicialmente, 32 vagas disponíveis
     const urlexterna = "https://www.ww2cup.app.br/backend/Jogadores_confirmados_x1_prata.php"
 
     const toggleModal = (jogador) => {
@@ -28,6 +29,10 @@ const JogadoresConfirmadosX1Prata = () => {
             
             const data = await response.json();
             setJogadores(data);
+
+            const vagasOcupadas = data.length;
+            const vagasDisponiveis = 32 - vagasOcupadas;
+            setVagasRestantes(vagasDisponiveis);
     
           } catch (error) {
             console.error('Erro ao recuperar os dados:', error);
@@ -44,6 +49,7 @@ const JogadoresConfirmadosX1Prata = () => {
             <div className="linhaJogadorConfirmado">
                 <div className="linhaTituloJogador">
                     <h3>COMPETIDORES CONFIRMADOS NO TORNEIO!</h3>
+                    <p className="vagasRestantes">Vagas: {vagasRestantes}</p>
                 </div>
                 <div className="linhaJogadorConfirmado">
                     {jogadores.map((jogador, i) => (

@@ -2,7 +2,6 @@
 import './App.css';
 
 //HOOKS
-import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //PAGES
@@ -16,6 +15,7 @@ import JogadoresConfirmadosX1Prata from './components/JogadoresConfirmadosX1Prat
 
 //COMPONENTS
 import Navbar from './components/Navbar'
+import RegrasX1Prata from './components/RegrasX1Prata';
 
 
 
@@ -34,6 +34,7 @@ function App() {
           <Route path='/mural' element={<Mural/>} />
           <Route path='/contato' element={<Contato/>} />
           <Route path='/torneios/inscricao-x1' element={<FormularioX1Prata/>} />
+          <Route path='/torneios/regras-x1-prata' element={<RegrasX1Prata/>} />
           <Route path='/torneios/jogadores-confirmados' element={<JogadoresConfirmadosX1Prata/>} />
         </Routes>
       </BrowserRouter>

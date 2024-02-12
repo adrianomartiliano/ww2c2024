@@ -1,0 +1,43 @@
+.conteudoRegras{
+    background-image: url("../assets/fundo_regras.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menus-regras {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%; 
+}
+
+.secaoRegras {
+    margin-bottom: 20px; 
+    text-align: justify;
+    background-color: #ffac07d5;
+    color: #215D94;
+    border-radius: 8px;
+    border: 1px solid #979797;
+}
+.secaoRegras p{
+    text-align: left;
+}
+
+.secaoRegras h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 20px; 
+    border: 1px solid #979797;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.titleRegras{
+    color: #215D94;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    border-bottom: 4px solid red;
+}
