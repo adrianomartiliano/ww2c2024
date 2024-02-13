@@ -9,7 +9,7 @@ const JogadoresConfirmadosX1Prata = () => {
     const [jogadores, setJogadores] = useState([]);
     const [modalAberto, setModalAberto] = useState(false);
     const [jogadorSelecionado, setJogadorSelecionado] = useState(null);
-    const [vagasRestantes, setVagasRestantes] = useState(32); // Inicialmente, 32 vagas disponíveis
+    const [vagasRestantes, setVagasRestantes] = useState(32);
     const urlexterna = "https://www.ww2cup.app.br/backend/Jogadores_confirmados_x1_prata.php"
 
     const toggleModal = (jogador) => {

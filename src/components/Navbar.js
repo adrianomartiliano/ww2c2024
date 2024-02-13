@@ -23,6 +23,7 @@ const Navbar = () => {
             <nav className={`navMenu${menuAberto ? ' aberto' : ''}`}>
                 <Link to="/torneios" className="linkmenu" onClick={toggleMenu}>Torneios</Link>
                 <Link to="/mural" className="linkmenu" onClick={toggleMenu}>Mural</Link>
+                <Link to="/Administracao" className="linkmenu" onClick={toggleMenu}>Restrito</Link>
             </nav>
             <div className="hamburger" onClick={toggleMenu}>
                 <div className={`line ${menuAberto ? 'aberto' : ''}`}></div>
