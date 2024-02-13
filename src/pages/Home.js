@@ -1,9 +1,10 @@
+import GrupoWhats from "../components/GrupoWhats";
 import "./Home.css"
 
 const Home = () => {
     return(
         <div className="conteudoHome">
-            <h1>Em construção!</h1>
+            <GrupoWhats/>
         </div>
     )
 }
