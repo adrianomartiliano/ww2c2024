@@ -60,7 +60,7 @@ const FormularioX1Prata = () => {
         
     };
 
-    const clans = ["1973", "BOSS", "CAN", "CÂES", "FURA", "GTLA", "HARD", "HDL", "LBR", "MOW", "OTTO", "PRO", "SOLO", "TEAM", "TRIB", "TS", "UZ", "VKN", "VZLA", "WIN", "WORG", "WU"];
+    const clans = ["1973", "BOSS", "CAN", "CÂES", "FURA", "GTLA", "HARD", "HDL", "LBR", "MOW", "OTTO", "PRO", "SOLO", "TEAM", "TRIB", "TS", "UZ", "VKN", "VZMX", "VZLA", "WIN", "WORG", "WU"];
 
     return (
         <div className='conteudoInscricaoX1Prata'>
