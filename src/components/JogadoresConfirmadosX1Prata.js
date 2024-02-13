@@ -42,7 +42,7 @@ const JogadoresConfirmadosX1Prata = () => {
       }, []);
 
 
-        
+
 
     return(
         <div className="conteudoJogadoresConfirmadosX1Prata">

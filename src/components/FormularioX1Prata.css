@@ -17,3 +17,10 @@
     color: white;
     outline: none;
 }
+
+.msgSemVagas{
+    background-color: red;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
