@@ -37,6 +37,7 @@ nav{
         left: 0px;
         background-color: #ffab07;
         width: 100%;
+        z-index: 1000;
     }
 
     .navMenu.aberto{
