@@ -10,12 +10,15 @@ import Home from './pages/Home';
 import Formulario from './pages/Formulario';
 import Mural from './pages/Mural';
 import Torneios from './pages/Torneios';
-import FormularioX1Prata from './components/FormularioX1Prata';
-import JogadoresConfirmadosX1Prata from './components/JogadoresConfirmadosX1Prata';
+
+
 
 //COMPONENTS
 import Navbar from './components/Navbar'
 import RegrasX1Prata from './components/RegrasX1Prata';
+import FormularioX1Prata from './components/FormularioX1Prata';
+import JogadoresConfirmadosX1Prata from './components/JogadoresConfirmadosX1Prata';
+import ArmasPermitidasX1Prata from './components/ArmasPermitidasX1Prata';
 
 
 
@@ -36,6 +39,7 @@ function App() {
           <Route path='/torneios/inscricao-x1' element={<FormularioX1Prata/>} />
           <Route path='/torneios/regras-x1-prata' element={<RegrasX1Prata/>} />
           <Route path='/torneios/jogadores-confirmados' element={<JogadoresConfirmadosX1Prata/>} />
+          <Route path='/torneios/equipamentos-permitidos' element={<ArmasPermitidasX1Prata/>} />
         </Routes>
       </BrowserRouter>
     </div>

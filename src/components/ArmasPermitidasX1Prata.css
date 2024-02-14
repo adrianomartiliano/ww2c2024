@@ -1,0 +1,28 @@
+.slide-container {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid black;
+  }
+  
+  .each-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 205px;
+  }
+  
+  .each-slide span {
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+  .conteudoArmasPermitidas h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #215d94;
+  }
+  

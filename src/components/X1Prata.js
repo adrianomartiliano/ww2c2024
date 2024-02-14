@@ -11,7 +11,7 @@ const X1Prata = () => {
                 <div className="linhaMenux1"><Link to="inscricao-x1"><img className="iconTorneios" src="./inscricao.png" alt="Icone Inscrição"></img></Link><h4>PARTICIPAR</h4></div>
                 <div className="linhaMenux1"><Link to="jogadores-confirmados"><img className="iconTorneios" src="./confirmados_.png" alt="Icone Inscrição"></img></Link><h4>CONFIRMADOS</h4></div>
                 <div className="linhaMenux1"><Link to="regras-x1-prata"><img className="iconTorneios" src="./regras.png" alt="Icone Inscrição"></img></Link><h4>REGRAS GERAIS</h4></div>
-                <div className="linhaMenux1"><img className="iconTorneios" src="./armas.png" alt="Icone Inscrição"></img><h4>ARMAS PERMITIDAS</h4></div>
+                <div className="linhaMenux1"><Link to="equipamentos-permitidos"><img className="iconTorneios" src="./armas.png" alt="Icone Inscrição"></img></Link><h4>ARMAS PERMITIDAS</h4></div>
                 <div className="linhaMenux1"><img className="iconTorneios" src="./tabelas-icon.png" alt="Icone Inscrição"></img><h4>TABELAS</h4></div>
             </div>
 
