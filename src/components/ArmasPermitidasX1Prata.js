@@ -4,6 +4,7 @@ import 'react-slideshow-image/dist/styles.css';
 import './ArmasPermitidasX1Prata.css';
 
 import ArmasPrata from "../data/ArmasPrata";
+import EquipamentosPrata from '../data/EquipamentosPrata';
 
 const Slideshow = () => {
   return (
@@ -21,6 +22,17 @@ const Slideshow = () => {
             </Slide>
         </div>
         <h1>Colete e Especialidades</h1>
+        <div className="slide-container">
+            <Slide>
+                {EquipamentosPrata.map((Equipamento, i) => (
+                <div key={i} className="each-slide" style={{'backgroundImage': `url(${Equipamento.src})`}}>
+                    <div >
+                    <span>{Equipamento.name}</span>
+                    </div>
+                </div>
+                ))}
+            </Slide>
+        </div>
 
     </div>
     

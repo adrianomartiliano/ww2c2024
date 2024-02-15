@@ -1,5 +1,3 @@
-const arma1 = "./wwc2.png";
-
 
 const ArmasPrata = [
     {
@@ -68,5 +66,5 @@ const ArmasPrata = [
         name: "Baioneta"
     }
   ];
-  
+
   export default ArmasPrata;
