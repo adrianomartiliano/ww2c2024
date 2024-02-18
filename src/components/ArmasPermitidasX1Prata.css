@@ -1,7 +1,8 @@
 .slide-container {
-    width: 90%;
+    max-width: 500px;
     margin: 20px auto;
-    border: 2px solid black;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.692);
   }
   
   .each-slide {
@@ -10,7 +11,11 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
-    height: 205px;
+    height: 305px;
+    max-width: 500px;
+  }
+  .equipamento2 {
+    height: 255px !important;
   }
   
   .each-slide span {
@@ -18,11 +23,40 @@
     font-size: 20px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -150px;
   }
 
   .conteudoArmasPermitidas h1{
     text-align: center;
-    margin-top: 20px;
     color: #215d94;
+    background-color: #ffab07;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  .conteudoArmasPermitidas h1:nth-of-type(2){
+    margin-top: 30px;
+  }
+
+  .conteudoArmasPermitidas{
+    background-image: url("../assets/bg-armas-permitidas.jpg");
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: 700px) {
+    .slide-container{
+      width: 90%;
+    }
+    .each-slide{
+      height: 205px;
+    }
+    .conteudoArmasPermitidas{
+      height: calc((100vh - 95px));
+    }
   }
   

@@ -21,11 +21,11 @@ const Slideshow = () => {
                 ))}
             </Slide>
         </div>
-        <h1>Colete e Especialidades</h1>
+        <h1>Colete e Acessórios</h1>
         <div className="slide-container">
             <Slide>
                 {EquipamentosPrata.map((Equipamento, i) => (
-                <div key={i} className="each-slide" style={{'backgroundImage': `url(${Equipamento.src})`}}>
+                <div key={i} className="each-slide equipamento2" style={{'backgroundImage': `url(${Equipamento.src})`}}>
                     <div >
                     <span>{Equipamento.name}</span>
                     </div>
