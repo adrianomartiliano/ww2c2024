@@ -1,0 +1,32 @@
+/* Estilos para o componente Rodada1 */
+.rodada {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .rodada h3 {
+    font-size: 18px;
+    color: #215D94;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .rodada p {
+    text-align: center;
+    font-size: 16px;
+    color: #215D94;
+    margin-bottom: 5px;
+  }
+
+  .partida{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partida p span {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    padding: 10px;
+  }
