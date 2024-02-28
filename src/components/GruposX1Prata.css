@@ -6,13 +6,6 @@
     text-align: center;
     color: #215D94;
 }
-.grupo{
-    border: 1px solid gray;
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.296);
-    margin: 20px auto;
-    width: 97%;
-    padding: 10px 0;
-}
 
 
 /* Estilos para a tabela */
@@ -60,25 +53,6 @@
 .grupo tr:hover:not(:first-child) {
     background-color: rgb(94, 87, 87);
     color: white;
-}
-
-.divBtnRodada{
-    display: flex;
-    justify-content: center;
-}
-.btnRodada{
-    background-color: #ffac07d5;
-    text-align: center;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    border-radius: 20px;
-    color: #215D94;
-}
-
-.ativo {
-    background-color:#ffd787d5;
 }
 
 
