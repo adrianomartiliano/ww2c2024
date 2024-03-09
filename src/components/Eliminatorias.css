@@ -5,14 +5,24 @@
   }
   
   .eliminatorias-match {
+    color: #215D94;
     width: 90%;
     height: 100px;
     margin: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #99999996;
     border-radius: 5px;
+  }
+  .jogador{
+    text-align: center;
+  }
+  .titleOitavas{
+    width: 100%;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.459);
+    margin-bottom: -12px;
   }
   
   

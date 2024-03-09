@@ -8,7 +8,7 @@ const GrupoWhats = () => {
             <p>Grupo destinado apenas para receber avisos sobre datas e informações relacionadas aos torneios criados aqui por esse website.
                 Não será aberto para mensagens.
             </p>
-            <a href="https://chat.whatsapp.com/FWn8OESwX9j9e8rFa8NFkX" target="_blank">Entrar no Grupo</a>
+            <a href="https://chat.whatsapp.com/EscvwPgl9QSFDnL5XIsuTT" target="_blank">ENTRAR NO GRUPO</a>
             {/* https://chat.whatsapp.com/FWn8OESwX9j9e8rFa8NFkX */}
         </div>
     )

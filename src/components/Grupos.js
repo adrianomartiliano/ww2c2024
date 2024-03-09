@@ -26,7 +26,7 @@ const Grupos = () =>{
         { jogador1: "Corisco", jogador2: "Ж-ѴЭИЭГЦЭСД-Ж", placar1: 0, placar2: 0, grupo: 1 },
         { jogador1: "ANGEL MEXICANO", jogador2: "-ф-РЭXЭBЯ-ф-", placar1: 0, placar2: 3, grupo: 1 },
         { jogador1: "HIPKRAKEN", jogador2: "Solamente Paco", placar1: 0, placar2: 0, grupo: 2 },
-        { jogador1: "PANTERA NEGRA BR", jogador2: "Leleco", placar1: 0, placar2: 0, grupo: 2 },
+        { jogador1: "PANTERA NEGRA BR", jogador2: "Leleco", placar1: 0, placar2: 3, grupo: 2 },
         { jogador1: "BABA YAGA", jogador2: "-P90-", placar1: 0, placar2: 0, grupo: 3 },
         { jogador1: "SUKUNA", jogador2: "STEVEN", placar1: 0, placar2: 3, grupo: 3 },
         { jogador1: "SULY CARDNS", jogador2: "RM908", placar1: 1, placar2: 2, grupo: 4 },
