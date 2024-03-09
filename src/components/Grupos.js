@@ -29,14 +29,14 @@ const Grupos = () =>{
         { jogador1: "PANTERA NEGRA BR", jogador2: "Leleco", placar1: 0, placar2: 0, grupo: 2 },
         { jogador1: "BABA YAGA", jogador2: "-P90-", placar1: 0, placar2: 0, grupo: 3 },
         { jogador1: "SUKUNA", jogador2: "STEVEN", placar1: 0, placar2: 3, grupo: 3 },
-        { jogador1: "SULY CARDNS", jogador2: "RM908", placar1: 0, placar2: 0, grupo: 4 },
+        { jogador1: "SULY CARDNS", jogador2: "RM908", placar1: 1, placar2: 2, grupo: 4 },
         { jogador1: "ЯДСHД.СЦСД ВЯ", jogador2: "G Ф K Ц", placar1: 0, placar2: 3, grupo: 4 },
         { jogador1: "_J_A_V_O_H_I_R_", jogador2: "Pito Loco", placar1: 3, placar2: 0, grupo: 5 },
         { jogador1: "-Sдvдge Mфde-", jogador2: "Tu chocolatito", placar1: 3, placar2: 0, grupo: 5 },
         { jogador1: "KILLER_MOUSTER", jogador2: "XERIFE", placar1: 2, placar2: 0, grupo: 6 },
         { jogador1: "Joleno matador", jogador2: "HALCON NEGRO", placar1: 3, placar2: 0, grupo: 6 },
         { jogador1: "Rei julian", jogador2: "Raio Diurno", placar1: 3, placar2: 0, grupo: 7 },
-        { jogador1: "Venezolano", jogador2: "Fábio Ismael", placar1: 0, placar2: 0, grupo: 7 },
+        { jogador1: "Venezolano", jogador2: "Fábio Ismael", placar1: 0, placar2: 3, grupo: 7 },
         { jogador1: "Lokinho13", jogador2: "samurai Hyoga", placar1: 1, placar2: 2, grupo: 8 },
         { jogador1: "edvan", jogador2: "Hyoga Japan", placar1: 0, placar2: 3, grupo: 8 }
     ];
@@ -53,9 +53,9 @@ const Grupos = () =>{
         { jogador1: "_J_A_V_O_H_I_R_", jogador2: "-Sдvдge Mфde-", placar1: 0, placar2: 3, grupo: 5 },
         { jogador1: "XERIFE", jogador2: "HALCON NEGRO", placar1: 3, placar2: 0, grupo: 6 },
         { jogador1: "KILLER_MOUSTER", jogador2: "Joleno matador", placar1: 2, placar2: 1, grupo: 6 },
-        { jogador1: "Raio Diurno", jogador2: "Fábio Ismael", placar1: 0, placar2: 0, grupo: 7 },
+        { jogador1: "Raio Diurno", jogador2: "Fábio Ismael", placar1: 0, placar2: 3, grupo: 7 },
         { jogador1: "Rei julian", jogador2: "Venezolano", placar1: 0, placar2: 0, grupo: 7 },
-        { jogador1: "samurai Hyoga", jogador2: "Hyoga Japan", placar1: 0, placar2: 0, grupo: 8 },
+        { jogador1: "samurai Hyoga", jogador2: "Hyoga Japan", placar1: 3, placar2: 0, grupo: 8 },
         { jogador1: "Lokinho13", jogador2: "edvan", placar1: 3, placar2: 0, grupo: 8 }
     ];
 
