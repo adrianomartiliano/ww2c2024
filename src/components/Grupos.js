@@ -23,9 +23,9 @@ const Grupos = () =>{
         { jogador1: "edvan", jogador2: "samurai Hyoga", placar1: 0, placar2: 3, grupo: 8 }
     ];
     const rodada2 = [
-        { jogador1: "Corisco", jogador2: "Ж-ѴЭИЭГЦЭСД-Ж", placar1: 0, placar2: 0, grupo: 1 },
+        { jogador1: "Corisco", jogador2: "Ж-ѴЭИЭГЦЭСД-Ж", placar1: 2, placar2: 1, grupo: 1 },
         { jogador1: "ANGEL MEXICANO", jogador2: "-ф-РЭXЭBЯ-ф-", placar1: 0, placar2: 3, grupo: 1 },
-        { jogador1: "HIPKRAKEN", jogador2: "Solamente Paco", placar1: 0, placar2: 0, grupo: 2 },
+        { jogador1: "HIPKRAKEN", jogador2: "Solamente Paco", placar1: 0, placar2: 3, grupo: 2 },
         { jogador1: "PANTERA NEGRA BR", jogador2: "Leleco", placar1: 0, placar2: 3, grupo: 2 },
         { jogador1: "BABA YAGA", jogador2: "-P90-", placar1: 0, placar2: 0, grupo: 3 },
         { jogador1: "SUKUNA", jogador2: "STEVEN", placar1: 0, placar2: 3, grupo: 3 },
@@ -42,12 +42,12 @@ const Grupos = () =>{
     ];
     const rodada3 = [
         { jogador1: "Ж-ѴЭИЭГЦЭСД-Ж", jogador2: "-ф-РЭXЭBЯ-ф-", placar1: 0, placar2: 3, grupo: 1 },
-        { jogador1: "Corisco", jogador2: "ANGEL MEXICANO", placar1: 0, placar2: 0, grupo: 1 },
-        { jogador1: "Solamento Paco", jogador2: "Leleco", placar1: 0, placar2: 0, grupo: 2 },
+        { jogador1: "Corisco", jogador2: "ANGEL MEXICANO", placar1: 1, placar2: 0, grupo: 1 },
+        { jogador1: "Solamento Paco", jogador2: "Leleco", placar1: 0, placar2: 3, grupo: 2 },
         { jogador1: "HIPKRAKEN", jogador2: "PANTERA NEGRA BR", placar1: 0, placar2: 0, grupo: 2 },
         { jogador1: "-P90-", jogador2: "STEVEN", placar1: 0, placar2: 0, grupo: 3 },
         { jogador1: "BABA YAGA", jogador2: "SUKUNA", placar1: 0, placar2: 0, grupo: 3 },
-        { jogador1: "RM908", jogador2: "G Ф K Ц", placar1: 0, placar2: 0, grupo: 4 },
+        { jogador1: "RM908", jogador2: "G Ф K Ц", placar1: 1, placar2: 2, grupo: 4 },
         { jogador1: "SULY CARDNS", jogador2: "ЯДСHД.СЦСД ВЯ", placar1: 0, placar2: 0, grupo: 4 },
         { jogador1: "Pito Loco", jogador2: "Tu chocolatito", placar1: 0, placar2: 0, grupo: 5 },
         { jogador1: "_J_A_V_O_H_I_R_", jogador2: "-Sдvдge Mфde-", placar1: 0, placar2: 3, grupo: 5 },
