@@ -4,6 +4,8 @@ div .containerNavBar{
     justify-content: space-between;
     align-items: center;
     background-color: #ffab07;
+    height: 150px;
+    z-index: 10000;
 }
 
 nav{
@@ -33,7 +35,7 @@ nav{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 93px;
+        top: 123px;
         left: 0px;
         background-color: #ffab07;
         width: 100%;
