@@ -1,0 +1,31 @@
+.containerCardX3{
+    background-color: #ffac07c0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+    padding-top: 5px;
+    color: #215D94;
+    box-shadow: 1px 1px 20px 5px rgb(58, 58, 58);
+    width: 90%;
+}
+
+.containerMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Rubik Vinyl', system-ui;
+}
+
+.containerMenu > div {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Black Ops One', system-ui;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 20px;
+}

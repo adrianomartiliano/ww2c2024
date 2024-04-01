@@ -1,0 +1,18 @@
+.containerBtnTorneios{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.TitleTorneios img{
+    width: 70px;
+}
+
+.TitleTorneios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}

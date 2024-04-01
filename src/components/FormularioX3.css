@@ -1,0 +1,9 @@
+
+.jogador_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.label_id{
+    width: 35%;
+}

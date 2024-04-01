@@ -6,12 +6,17 @@ import React from "react";
 //CSS
 import "./Torneios.css"
 import X1Prata from "../components/X1Prata";
+import CardX3 from "../components/CardX3";
 
 const Torneios = () => {
 
     return (
         <div className="conteudoTorneios">
-            <X1Prata/>
+            <div className="containerModalidade">
+                <CardX3 />
+                <X1Prata />
+            </div>
+
         </div>
     )
 
