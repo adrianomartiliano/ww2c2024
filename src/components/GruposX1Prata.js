@@ -11,7 +11,7 @@ import Final from "./Final";
 const GrupoX1Prata = () => {
     
     
-    const [faseAtual, setFaseAtual] = useState('semifinal');
+    const [faseAtual, setFaseAtual] = useState('final');
 
     const avancarFase = () => {
         switch (faseAtual) {

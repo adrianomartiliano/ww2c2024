@@ -6,6 +6,7 @@ const Home = () => {
     return(
         <div className="conteudoHome">
             <Torneios />
+            <img className="bannerProvisorio" src="https://ww2cup.app.br/images/banners/Campe%C3%A3o-torneio-x1-n%C3%ADvel-prata.png" ></img>
             <GrupoWhats/>
         </div>
     )

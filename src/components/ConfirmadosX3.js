@@ -31,7 +31,7 @@ const ConfirmadosX3 = () => {
             setEquipe(data);
 
             const vagasOcupadas = data.length;
-            const vagasDisponiveis = 30 - vagasOcupadas;
+            const vagasDisponiveis = 20 - vagasOcupadas;
             setVagasRestantes(vagasDisponiveis);
     
           } catch (error) {
