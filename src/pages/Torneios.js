@@ -14,7 +14,6 @@ const Torneios = () => {
         <div className="conteudoTorneios">
             <div className="containerModalidade">
                 <CardX3 />
-                <X1Prata />
             </div>
 
         </div>
