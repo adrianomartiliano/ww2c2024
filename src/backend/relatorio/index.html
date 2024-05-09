@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Clan</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Selecionar Clan</h1>
+    <button id="can1Btn">CAN 1</button>
+    <button id="can2Btn">CAN 2</button>
+
+    <script>
+        document.getElementById("can1Btn").addEventListener("click", function() {
+            // Redirecionar para o relatório do CAN 1
+            window.location.href = "pagina_relatorio_can1.php";
+        });
+
+        document.getElementById("can2Btn").addEventListener("click", function() {
+            // Redirecionar para o relatório do CAN 2
+            window.location.href = "pagina_relatorio_can2.php";
+        });
+    </script>
+</body>
+</html>
