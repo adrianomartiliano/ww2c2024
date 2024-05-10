@@ -9,7 +9,7 @@ const CardX3 = () => {
             <h3>X3 - NÍVEL ELITE</h3>
             <div className="containerMenu">
                 <div className="">
-                    <Link to="inscricao-x3">
+                    <Link to="#">
                         <img className="iconTorneios" src="./inscricao.png" alt="Icone Inscrição"></img>
                     </Link>
                     <h4>PARTICIPAR</h4>

@@ -23,6 +23,7 @@ import ArmasPermitidasX1Prata from './components/ArmasPermitidasX1Prata';
 import GrupoX1Prata from './components/GruposX1Prata';
 import RegrasX3 from './components/RegrasX3';
 import ConfirmadosX3 from './components/ConfirmadosX3';
+import TabelaX3 from './components/TabelaX3';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path='/torneios/inscricao-x3' element={<FormularioX3/>} />
           <Route path='/torneios/regras-x3' element={<RegrasX3/>} />
           <Route path='/torneios/equipes-confirmadas-x3' element={<ConfirmadosX3/>} />
+          <Route path='/torneios/tabela-x3' element={<TabelaX3/>} />
 
         </Routes>
       </BrowserRouter>

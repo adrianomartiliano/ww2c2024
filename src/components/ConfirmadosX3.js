@@ -49,7 +49,7 @@ const ConfirmadosX3 = () => {
             <div className="linhaJogadorConfirmado">
                 <div className="linhaTituloJogador">
                     <h3>EQUIPES</h3>
-                    <p className="vagasRestantes">Vagas: {vagasRestantes}</p>
+                    {/* <p className="vagasRestantes">Vagas: {vagasRestantes}</p> */}
                 </div>
                 <div className="linhaJogadorConfirmado">
                     {equipes.map((jogador, i) => (

@@ -1,0 +1,50 @@
+body{
+    background-image: url("../assets/fundo_regras.jpg");
+    background-size: cover;
+}
+
+.BtnRodadas {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px auto;
+    color: #215D94;
+}
+
+button{
+    color: #215D94;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(240, 248, 255, 0.658);
+    border: 1px solid rgba(128, 128, 128, 0.445);
+}
+
+.containerCard{
+    margin: 0 auto;
+    width: 95%;
+}
+.cardPartida{
+    border: 1px solid gray;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #ffac078f;
+    color: #215D94;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.equipe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.placar{ 
+    border: 1px solid gray;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: rgba(240, 248, 255, 0.658);
+}
