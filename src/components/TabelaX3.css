@@ -48,3 +48,84 @@ button{
     border-radius: 4px;
     background-color: rgba(240, 248, 255, 0.658);
 }
+
+.classificacao{
+    margin: 20px auto;
+    width: 90%;
+    background-color: #ffac078f;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.Btnclassificacao{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-size: 25px;
+}
+
+.modal-tabela-content{
+    background-color: white;
+    width: 95%;
+}
+.close{
+    background-color: rgb(221, 78, 78);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Estilo para o modal */
+.modal {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para o conteúdo do modal */
+  .modal-tabela-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    overflow: auto;
+    margin-top: 80px;
+  }
+  
+  /* Estilo para o botão de fechar */
+  .close {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Estilo para a tabela */
+  .modal-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilo para os cabeçalhos da tabela */
+  .modal-table th {
+    background-color: #dfdfdf;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilo para as células da tabela */
+  .modal-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilo para as células da tabela na última linha */
+  .modal-table tr:last-child td {
+    border-bottom: none;
+  }
+  

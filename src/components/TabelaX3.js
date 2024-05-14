@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import "./TabelaX3.css";
 
 const RodadasX3 = () => {
@@ -7,7 +6,10 @@ const RodadasX3 = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [rodadaAtual, setRodadaAtual] = useState(1); // Inicializa na primeira rodada
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar se o modal está aberto
+  const [modalData, setModalData] = useState([]); // Estado para armazenar os dados do modal
   const url = "https://ww2cup.app.br/backend/rodadas-x3.php";
+  const modalUrl = "https://ww2cup.app.br/backend/classificacao_x3.php"; // Defina a URL da segunda API aqui
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,6 +30,30 @@ const RodadasX3 = () => {
     fetchData();
   }, []);
 
+  // Função para buscar dados da segunda URL quando o modal for aberto
+  useEffect(() => {
+    const fetchModalData = async () => {
+      try {
+        const response = await fetch(modalUrl);
+        if (!response.ok) {
+          throw new Error("Erro ao buscar os dados do modal");
+        }
+        const data = await response.json();
+        setModalData(data);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    if (isModalOpen) {
+      fetchModalData();
+    }
+  }, [isModalOpen, modalUrl]);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen); // Inverte o estado do modal
+  };
+
   if (isLoading) {
     return <div>Carregando...</div>;
   }
@@ -41,7 +67,7 @@ const RodadasX3 = () => {
 
   // Função para avançar a rodada
   const avancarRodada = () => {
-    if (rodadaAtual < 2) { 
+    if (rodadaAtual < 2) {
       setRodadaAtual(rodadaAtual + 1);
     }
   };
@@ -55,6 +81,9 @@ const RodadasX3 = () => {
 
   return (
     <div>
+      <div className="classificacao">
+        <button className="Btnclassificacao" onClick={toggleModal}>Classificação</button>
+      </div>
       <div className="BtnRodadas">
         <button onClick={voltarRodada} disabled={rodadaAtual === 1}>&lang;</button>
         <h2>Rodada {rodadaAtual}</h2>
@@ -70,6 +99,37 @@ const RodadasX3 = () => {
         ))}
       </div>
       
+      {isModalOpen && (
+  <div className="modal">
+    <div className="modal-tabela-content">
+      <span className="close" onClick={toggleModal}>&times; Fechar</span>
+      <table className="modal-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Equipes</th>
+            <th>Pontos</th>
+            <th>Kills</th>
+            <th>PC</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Renderizando os dados */}
+          {modalData.map((item, index) => (
+            <tr key={index}>
+              <td>{index + 1}</td>
+              <td>{item.nome_equipe}</td>
+              <td>{item.pontos}</td>
+              <td>{item.kills}</td>
+              <td>{item.pontos_combate}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+)}
+
     </div>
   );
 };
