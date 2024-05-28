@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./TabelaX3.css";
 
 const RodadasX3 = () => {
+
+  const atualizarodada = 4;
+
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [rodadaAtual, setRodadaAtual] = useState(2); // Inicializa na primeira rodada
+  const [rodadaAtual, setRodadaAtual] = useState(atualizarodada); // Inicializa na primeira rodada
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar se o modal está aberto
   const [modalData, setModalData] = useState([]); // Estado para armazenar os dados do modal
   const url = "https://ww2cup.app.br/backend/rodadas-x3.php";
@@ -67,7 +70,7 @@ const RodadasX3 = () => {
 
   // Função para avançar a rodada
   const avancarRodada = () => {
-    if (rodadaAtual < 3) {
+    if (rodadaAtual < atualizarodada) {
       setRodadaAtual(rodadaAtual + 1);
     }
   };
@@ -87,7 +90,7 @@ const RodadasX3 = () => {
       <div className="BtnRodadas">
         <button onClick={voltarRodada} disabled={rodadaAtual === 1}>&lang;</button>
         <h2>Rodada {rodadaAtual}</h2>
-        <button onClick={avancarRodada} disabled={rodadaAtual === 3}>&rang;</button>
+        <button onClick={avancarRodada} disabled={rodadaAtual === atualizarodada}>&rang;</button>
       </div>
       
       <div className="containerCard">
