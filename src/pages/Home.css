@@ -1,7 +1,7 @@
 .conteudoHome{
     background-image: url("../assets/fundo_home.jpg");
     background-size: cover;
-    height: 100%;
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,21 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 5px rgb(0, 0, 0);
+}
+
+.Card{
+    width: 90%;
+    margin: 30px;
+}
+.h1Hall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+.h1Hall a {
+    text-decoration: none;
+    color: #ffac07f1;
 }
 
 .avisoHome{

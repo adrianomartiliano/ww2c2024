@@ -3,7 +3,7 @@ import "./TabelaX3.css";
 
 const RodadasX3 = () => {
 
-  const atualizarodada = 4;
+  const atualizarodada = 5;
 
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -104,6 +104,7 @@ const RodadasX3 = () => {
       
       {isModalOpen && (
   <div className="modal">
+    
     <div className="modal-tabela-content">
       <span className="close" onClick={toggleModal}>&times; Fechar</span>
       <table className="modal-table">
