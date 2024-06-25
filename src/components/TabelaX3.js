@@ -3,7 +3,7 @@ import "./TabelaX3.css";
 
 const RodadasX3 = () => {
 
-  const atualizarodada = 5;
+  const atualizarodada = 6;
 
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
